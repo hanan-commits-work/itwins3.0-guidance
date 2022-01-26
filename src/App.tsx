@@ -136,6 +136,7 @@ const App: React.FC = () => {
           viewCreatorOptions={viewCreatorOptions}
           enablePerformanceMonitors={true} // see description in the README (https://www.npmjs.com/package/@itwin/desktop-viewer-react)
           uiProviders={[new MyFirstUiProvider()]}
+          theme="light"
         />
       )}
     </div>
