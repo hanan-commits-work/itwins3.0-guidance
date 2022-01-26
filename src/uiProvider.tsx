@@ -31,7 +31,6 @@ const Dlg:  FunctionComponent<{isNew: boolean}> = ({isNew}) => {
       title={'Dialog'}
     >
           <div id="_issueDlg"> 
-          <span><p>Slightly drag to move the dialog box, and dropdowns start function properly</p></span>
           <span>Type: </span>
             <Select value={changeType}
             options={[
@@ -78,26 +77,6 @@ export class MyFirstUiProvider implements UiItemsProvider {
       location === StagePanelLocation.Right &&
       section === StagePanelSection.Start
     ) {
-      const dropdown: AbstractWidgetProps = {
-        id: 'DropDown',
-        label: 'Drop Down',
-        getWidgetContent() {
-          return(
-            <span> Example Dropdown in widget (it doesnt need to change value)
-              it is only here to showcase that dropdowns in widgets are dropping menu at the right position
-            <Select value={"High"}
-            options={[
-              {value: "High", label:"High"},
-              {value: "Normal",label:"Normal"},
-              {value: "Low", label: "Low"} ]}
-              onChange={(option) => (option)} 
-            />  
-            </span>
-          );
-        }
-
-      }
-      widgets.push(dropdown)
 
       const handleDialog = () => {
         ModelessDialogManager.openDialog(MyFirstUiProvider.issuesDialog(true), "issueDialog");

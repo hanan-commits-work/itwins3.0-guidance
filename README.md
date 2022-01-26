@@ -20,6 +20,6 @@ IMJS_ITWIN_ID = ""
 IMJS_IMODEL_ID = ""
 ```
 
-
+After filling the above fields in the .env file, you can simply run the application. 
 
 
