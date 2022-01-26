@@ -22,4 +22,5 @@ IMJS_IMODEL_ID = ""
 
 After filling the above fields in the .env file, you can simply run the application. 
 
+![Screenshot 2022-01-26 134642](https://user-images.githubusercontent.com/89520756/151131344-3ea4bce9-812c-4ed1-bd79-de3d169979a8.png)
 
