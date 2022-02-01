@@ -40,6 +40,7 @@ const Dlg:  FunctionComponent<{isNew: boolean}> = ({isNew}) => {
               {value: "Maintenance", label: "Maintenance"},
               {value: "Other", label: "Other"} ]}
                onChange={(option) => setChangeType(option)} 
+               popoverProps={{ appendTo: document.body }}
              />  
            <span>Priority</span>  
            <Select value={changePriority}
@@ -48,7 +49,9 @@ const Dlg:  FunctionComponent<{isNew: boolean}> = ({isNew}) => {
               {value: "Normal",label:"Normal"},
               {value: "Low", label: "Low"} ]}
                onChange={(option) => setChangePriority(option)} 
-             />  
+               popoverProps={{ appendTo: document.body }}
+
+            />  
              </div>      
     </Dialog>
   );
